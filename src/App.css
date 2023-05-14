@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,174 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.nav{
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  width:fit-content;
+  box-shadow: 2px 2px #d1d1d1;
+  }
+  .nav-item{
+  list-style: none;
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.219);
+  background-color:white;
+  color: black;
+  }
+  .nav-link{
+  text-decoration: none;
+  padding:px 20px;
+  }
+  .active{
+  background-color:rgba(235, 235, 235, 0.5);
+  text-shadow: 1px 1px #bdbdbd;
+  }
+  .avatar{
+    display: flex;
+    flex-direction: row;
+    /* border:1px solid blue; */
+width:500px;
 }
+.image{
+    /* margin: 5px; */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.userEmail{
+    font-size: smaller;
+    color: gray;
+}
+.Cont4{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    }
+    .Status{
+        /* border:1px solid blue; */
+        display: flex;
+        width:100px;
+        align-items: center;
+        padding-left: 5px;
+    }
+    .Role{
+        /* border:1px solid blue; */
+        width:100px;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+    }
+    .LastLogin{
+        /* border:1px solid blue; */
+        width:100px;
+    }
+    .date{
+
+    }
+    .time{
+        font-size: smaller;
+        color: gray;
+    }
+    .Delete{
+        /* border:1px solid blue; */
+        width:40px;
+    }
+    .Edit{
+        /* border:1px solid blue; */
+        width:40px;
+    }
+    .active_badge{
+        border-radius: 10px;
+        padding: 5px;
+        font-size: small;
+        color: rgb(42, 187, 42);
+        background-color: rgba(33, 255, 33, 0.082);
+        font-weight: bold;
+    }
+    .inactive_badge{
+        border-radius: 10px;
+        padding: 5px;
+        font-size: small;
+        color: gray;
+        background-color: rgba(128, 128, 128, 0.096);
+        font-weight: bold;
+    }
+    .container{
+      border:1px solid black;
+      width: 1100px;
+      }
+      .cont1{
+      border: 1px solid red;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      }
+      .header{
+          margin: 0px;
+          
+      }
+      .header2{
+          color: gray;
+      }
+      .cont2{
+          /* border: 1px solid blue; */
+          padding: 15px;
+      }
+      .cont3{
+          /* border: 1px solid green; */
+          width:300px;
+          height: 40px;
+          display: flex;
+          padding: 15px;
+          justify-content: space-between;
+      }
+      .cont4{
+      border: 1px solid green;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0px 15px;
+      }
+      .name{
+      /* border:1px solid blue; */
+      width:500px;
+      }
+      .status{
+          /* border:1px solid blue; */
+          width:100px;
+      }
+      .role{
+          /* border:1px solid blue; */
+          width:100px;
+      }
+      .lastLogin{
+          /* border:1px solid blue; */
+          width:100px;
+      }
+      .delete{
+          /* border:1px solid blue; */
+          width:40px;
+      }
+      .edit{
+          /* border:1px solid blue; */
+          width:40px;
+      }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+          monospace;
+      }

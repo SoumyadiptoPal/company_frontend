@@ -1,25 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import Navbar from './components/Navbar';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import Users from './components/Users';
+import General from './components/General';
+import Plan from './components/Plan';
+import Billing from './components/Billing';
+import Integrations from './components/Integrations';
+import { QueryClient,QueryClientProvider } from 'react-query';
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
+    <QueryClientProvider client={queryClient}>
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='header' ><h2 style={{paddingLeft:"8px"}}>Company Settings</h2></div>
+      <Navbar/>
+      <Routes>
+            <Route path="/" element={<Users/>}/>
+            <Route path="/general" element={<General/>}/>
+            <Route path="/plan" element={<Plan/>}/>
+            <Route path="/billing" element={<Billing/>}/>
+            <Route path="/integrations" element={<Integrations/>}/>
+      </Routes>
     </div>
+    </Router>
+    </QueryClientProvider>
   );
 }
 
